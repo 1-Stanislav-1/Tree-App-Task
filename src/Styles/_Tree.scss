@@ -1,0 +1,138 @@
+.Tree {
+	margin-top: 30px;
+
+	.Tree-rootNode {
+		display: flex;
+		align-items: center;
+		height: 50px;
+
+		&:hover {
+			background: rgb(235, 235, 235);
+		}
+
+		.Tree-showChildrenButton {
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			line-height: 20px;
+			transform: rotate(-90deg);
+			text-align: center;
+			color: grey;
+			font-size: 18px;
+			transition: color .3s;
+	
+			&:hover {
+				color: rgb(175, 175, 175);
+			}
+		}
+	
+		h3 {
+			margin-left: 5px;
+			display: inline-block;
+		}
+	
+		.Tree-createNode {
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			margin-left: 10px;
+			border: 2px solid grey;
+			border-radius: 50%;
+			text-align: center;
+			color: grey;
+			font-weight: 900;
+			transition: .3s;
+	
+			&:hover {
+				color: rgb(175, 175, 175);
+				border: 2px solid rgb(175, 175, 175);
+			}
+		}
+	}
+
+	.Tree-nodeList {
+
+		.Tree-branch {
+			display: flex;
+			align-items: center;
+			height: 50px;
+			padding-left: 30px;
+
+			&:hover {
+				background: rgb(235, 235, 235);
+			}
+
+			.Tree-createChildNode {
+				width: 20px;
+				height: 20px;
+				margin-left: 10px;
+				border: 2px solid grey;
+				border-radius: 50%;
+				text-align: center;
+				color: grey;
+				font-weight: 900;
+				transition: .3s;
+
+				&:hover {
+					color: rgb(175, 175, 175);
+					border: 2px solid rgb(175, 175, 175);
+				}
+			}
+
+			.Tree-renameNode {
+				width: 20px;
+				height: 20px;
+				margin: 0 0 4px 10px;
+				color: rgb(80, 80, 80);
+				font-size: 20px;
+				font-weight: 900;
+				transform: rotate(-13deg);
+				transition: .3s;
+
+				&:hover {
+					color: rgb(150, 150, 150);
+				}
+			}
+
+			.Tree-removeNode {
+				width: 20px;
+				height: 20px;
+				margin-left: 10px;
+				border: 2px solid grey;
+				border-radius: 50%;
+				text-align: center;
+				color: grey;
+				font-weight: 900;
+				transition: .3s;
+
+				&:hover {
+					color: rgb(175, 175, 175);
+					border: 2px solid rgb(175, 175, 175);
+				}
+			}
+		}
+
+		li {
+			
+			.Tree-showChildrenButton {
+				display: inline-block;
+				width: 20px;
+				height: 20px;
+				line-height: 20px;
+				margin-right: 5px;
+				transform: rotate(-90deg);
+				text-align: center;
+				color: grey;
+				font-size: 18px;
+				transition: color .3s;
+	
+			&:hover {
+				color: rgb(175, 175, 175);
+			}
+			}
+			.Tree-ChildNodeList {
+				margin-left: 20px;
+			}
+		}
+	}
+}

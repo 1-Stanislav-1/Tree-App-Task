@@ -1,0 +1,46 @@
+@import "App",
+	"Tree",
+	"ModalAlert",
+	"ModalCreateNode",
+	"ModalRenameNode",
+	"ModalRemoveNode";
+
+.hidden {
+	display: none !important;
+}
+
+.active {
+	background: lightgrey !important;
+}
+
+.showChildren {
+	transform: rotate(0deg) !important;
+}
+
+* {
+	cursor: default;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	outline: none;
+	user-select: none;
+}
+
+body {
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+		'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+		monospace;
+}
+
+#root {
+	display: flex;
+	height: 100vh;
+	justify-content: center;
+}
